@@ -1,0 +1,17 @@
+<h1 class="centered-content lower-text">私が高校生だった<%= @year %>年を思い出そう！</h1>
+
+<h2 style="text-align: center; color: blue;">流行った曲</h2>
+<% @songs.each do |song| %>
+  <p class="centered-block with-width"><%= song.artist %> - <%= song.title %> (<%= song.year %>年)</p>
+<% end %>
+
+<% if @phrase %>
+  <h2 style="text-align: center; color: red;">その年の流行の言葉: <%= @phrase.content %></h2>
+<% else %>
+  <h2 style="text-align: center; color: red;">その年の流行の言葉は見つかりませんでした。</h2>
+<% end %>
+
+
+<p class="centered-content">
+  <%= link_to "ツイートする", "https://twitter.com/intent/tweet?text=#{URI.encode(@tweet_content)}", target: "_blank" %>
+</p>

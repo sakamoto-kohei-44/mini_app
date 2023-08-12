@@ -1,0 +1,112 @@
+// Place all the styles related to the Songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.centered-content {
+  text-align: center;
+}
+
+.centered-block {
+  margin: 0 auto;
+  display: block;
+}
+
+/* 以下の部分は、特定の幅を持たせたい場合の例です。必要に応じて追加・調整してください */
+.centered-block.with-width {
+  width: 50%;
+  margin-left: 40%;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #00a8e8;
+}
+
+.centered-form {
+  text-align: center;
+  background-color: #e1ffed; /* 明るい緑色の背景 */
+  padding: 20px;
+  border-radius: 15px; /* 角を丸くする */
+  width: 300px;
+  margin: 0 auto; /* 中央寄せ */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* ソフトな影 */
+}
+
+.centered-form input[type="number"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #a8e0b9; /* 緑色の境界線 */
+  margin-bottom: 10px;
+  font-size: 16px; /* 文字サイズの調整 */
+}
+
+.centered-form input[type="submit"] {
+  background-color: #6ecf95; /* 緑色のボタン */
+  color: white; /* 文字色を白に */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold; /* 太字にする */
+  cursor: pointer; /* マウスカーソルを指マークに */
+  transition: background-color 0.3s; /* クリックしたときのアニメーション */
+}
+
+.centered-form input[type="submit"]:hover {
+  background-color: #5db07f; /* ホバー時の色 */
+}
+
+body {
+  image-rendering: optimizeQuality; // 画質を最適化
+  background-image: url(asset-path('aa.jpeg')); /* 'your_image_filename.jpg' は使用する画像ファイルの名前に置き換えてください */
+  background-size: 1300px 1230px; /* 画像をビューポートの大きさに合わせる */
+  background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+  background-position: center center; /* 画像を中央に配置 */
+}
+
+.outlined-text {
+  -webkit-text-stroke-width: 2px; 
+  -webkit-text-stroke-color: black; 
+  color: transparent; // これにより、テキスト自体は非表示になり、ストロークだけが表示される
+}
+
+.lower-text {
+  padding-top: 150px;  // 20pxの上パディングを追加。この値も調整可能です。
+}
+
+.lower-text {
+  font-size: 3.5em; /* 既定のフォントサイズより大きくしています。適切なサイズに調整してください。 */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(asset-path('aa.jpg'));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.lower-text {
+  text-shadow: -1px -1px 0 #FFFFFF,  
+               1px -1px 0 #FFFFFF,
+              -1px  1px 0 #FFFFFF,
+               1px  1px 0 #FFFFFF;  /* 白色の外枠 */
+  font-size: 5em;  /* フォントサイズを2倍にしてみます。必要に応じて調整 */
+}
+
+.centered-content.lower-text {
+  margin-top: -75px;  /* 上方向に20px移動します。この値は必要に応じて調整してください */
+}

@@ -1,0 +1,11 @@
+<div class="centered-content">
+  <h1 class="lower-text">青春検索</h1>
+  <p>高校時代の年代で検索しよう！</p>
+  
+  <div class="centered-form">
+    <%= form_with url: songs_result_path, method: :post, local: true do |f| %>
+      <%= f.number_field :year, placeholder: "例: 2001" %>
+      <%= f.submit "検索" %>
+    <% end %>
+  </div>
+</div>
